@@ -1,0 +1,15 @@
+[tracker]
+# Name of the worksheet tab inside the spreadsheet.
+worksheet_name = "Sheet1"
+
+# How far back to look for emails (in days).
+lookback_days = 30
+
+# When true: print intended changes without writing to the sheet.
+# Set to false when you are confident the matching looks correct.
+dry_run = false
+
+# Valid Status values the agent may write.
+# Order matters: later entries are considered "higher" — the agent will
+# never overwrite a status with one that appears earlier in this list.
+status_values = ["Applied", "Acknowledged", "Interview", "Offer", "Rejected"]
